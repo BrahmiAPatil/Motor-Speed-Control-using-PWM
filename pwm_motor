@@ -1,0 +1,12 @@
+#include<p18f4580.h>
+#define RS PORTCbits.RC0
+#define E PORTCbits.RC1
+#define IN1 PORTCbits.RC3
+#define IN2 PORTCbits.RC4
+#define ENA PORTCbits.RC2
+void delay(int a)
+{
+int i,j;
+for(i=0;i<a;i++)
+for(j=0;j<100;j++);
+}
